@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<h2>Index page.</h2>
+{% if all_categories %}
+    <h3>Current categories: ({{ num_categories }}) </h3>
+    {% for category in all_categories %}
+
+        <li><a href="{{category.get_absolute_url }}">{{ category }}</a></li>
+
+    {% endfor %}
+{% else %}
+    <h3>There are no categories. Please create.</h3>
+{% endif %}
+
+<form  method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<input class="btn btn-success" type="submit" value="Submit">
+</form>
+
+<h1>--------------</h1>
+
+<form  method="POST">
+{% csrf_token %}
+{{ form_page.as_p }}
+<input class="btn btn-success" type="submit" value="Submit">
+</form>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<h2>Category Detail</h2>
+{% if object %}
+    <h3>Current category: </h3>
+
+        <li><a href="{{category.get_update_url }}">{{ object }}</a></li>
+
+{% else %}
+    <h3>There are no categories. Please create.</h3>
+{% endif %}
+
+{% endblock %}
