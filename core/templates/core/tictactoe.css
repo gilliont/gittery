@@ -1,0 +1,22 @@
+
+tr{
+    color: #242aff;
+    width: 50px;
+}
+
+td{
+    color: #000000;
+    border: #000000 solid 2px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 60px;
+}
+
+/*table{*/
+    /*border: #000000 solid 2px;*/
+/*}*/
+
+.container{
+    align-content: center;
+}

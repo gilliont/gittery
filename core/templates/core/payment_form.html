@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <link rel="stylesheet" href="mycss.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+<body>
+<h1>Welcome</h1>
+<h3>Course Sign Up Page</h3>
+
+
+    <div class="container">
+        <p>Please note, First Name, Last Name, Email, Password required.</p>
+    <form method="post" action="base.html">
+        <label>First Name</label>
+        <input type="text" name="first_name" autocomplete='given-name' value="" required>
+        <label>Last Name</label>
+        <input type="text" name="last_name" autocomplete='family-name' value="" required>
+        <br>
+        <label>Email</label>
+        <input type="email" name="email" autocomplete='email' value="" required>
+        <br>
+        <label>Password</label>
+        <input type="password" name="password1" autocomplete='password' value="" required>
+        <br>
+        <label>Password</label>
+        <input type="password" name="password2" autocomplete='password' value="" required>
+        <p></p>
+        <div class="container">
+            <label>Select your gender:</label>
+            <br>
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <br>
+            <label>Female</label>
+            <input type="radio" name="gender">
+            <br>
+            <label>Pay with Credit card or PayPal?</label>
+            <br>
+            <select name="Select">
+                <option>Credit Card</option>
+                <option>Pay Pal</option>
+            </select>
+            <p></p>
+            <label for="mytextblock">Comment:</label>
+            <textarea id="mytextblock"></textarea>
+        </div>
+
+        <br>
+        <input type="submit" value="Submit">
+       <!-- <input type="button" value="Submit"
+       onclick="parent.location='base.html'"> /-->
+
+       <!--  <input type="button" value="Submit"
+       onclick="location.href='base.html'"> /-->
+
+
+    </form>
+    </div>
+
+</body>
+</html>
